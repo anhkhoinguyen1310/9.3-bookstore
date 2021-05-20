@@ -4,9 +4,13 @@ const authorSchema = mongoose.Schema({
     name: {
       trim: true,
       type: String,
-      unique: true,
+      unique: true, 
       required: true,
     },
+    user: 
+    {
+      type: String,
+    }
   });
 
 const Author = mongoose.model("Author", authorSchema);
